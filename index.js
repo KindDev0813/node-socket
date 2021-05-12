@@ -13,6 +13,7 @@ io.on("connection", function (socket) {
 
   socket.on("join", function (msg) {
     id = msg;
+    console.log(msg, 'joined');
   });
 
   socket.on("subscribe", async function (roomInfo) {
